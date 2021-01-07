@@ -86,7 +86,7 @@ char *printMsg(char sender[15],char recipient[15]){
     mysql_query(conn_ptr,que);
     res_ptr = mysql_store_result(conn_ptr);
     int a = mysql_num_rows(res_ptr);
-    while((sqlrow = mysql_fetch_row(res_ptr))){
+    while(sqlrow = mysql_fetch_row(res_ptr)){
         sprintf(msgpre[i],"%s %s %s %s\n",sqlrow[1],sqlrow[2],sqlrow[3],sqlrow[4]);
         i++;
     }

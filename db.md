@@ -31,13 +31,13 @@ create datebase chatlogs;
 
 ## 建表数据
 
-#### 用户表
+### 用户表
 create table user(  
     username varchar(20),  
     password varchar(20)
 )  
 
-#### 聊天记录表
+### 聊天记录表
 create table msg(  
     id int primary key auto_increment,  
     sender varchar(20),  
@@ -46,7 +46,7 @@ create table msg(
     time datetime default current_timestamp
 )
 
-#### 群聊天记录表
+### 群聊天记录表
 create table groupmsg(
     id int primary key auto_increment,  
     groupid varchar(20),  

@@ -15,6 +15,7 @@
 #define NUM 32
 #define SPACE "------------------------"
 #define dataLen 1024
+
 char buf[dataLen];
 
 typedef struct Msg{

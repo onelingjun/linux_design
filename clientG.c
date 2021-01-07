@@ -88,8 +88,8 @@ void *read_thread(void *p){
 			strcat(USER, SEND);
 			strcat(USER, mymsg.mess);
 			strcpy(buffer, USER);
-			GtkTextIter start, end;												   //新建保存文字在buffer中位置的结构start和end。
-			gtk_text_buffer_get_bounds(GTK_TEXT_BUFFER(bufferuser), &start, &end); //得到当前buffer中开始位置，结束位置的ITER。
+			GtkTextIter start, end;												    //新建保存文字在buffer中位置的结构start和end。
+			gtk_text_buffer_get_bounds(GTK_TEXT_BUFFER(bufferuser), &start, &end);	//得到当前buffer中开始位置，结束位置的ITER。
 			gtk_text_buffer_insert(GTK_TEXT_BUFFER(bufferuser), &start, buffer, strlen(buffer));
 			// printf("222\n");
 		}else if (mymsg.command == 5){
